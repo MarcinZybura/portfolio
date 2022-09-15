@@ -29,6 +29,7 @@ h1,
 }
 
 form {
+    border-radius: 15px;
     height: 300px;
     width: 300px;
     display: flex;
