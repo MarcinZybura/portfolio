@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+.kontakt {
+    background: url(images/prototype.jpg);
+    padding: 50px 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontakt .naglowek {
+    max-width: 800px;
+    text-align: center;
+}
+
+.kontakt .naglowek h2 {
+    font-size: 44px;
+    color: #fff;
+}
+
+.kontakt .naglowek p {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .sekcja-kontaktowa {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .sekcja-kontaktowa .box {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+
+.container .sekcja-kontaktowa .box .icon {
+    display: flex;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 26px;
+}
+
+.container .sekcja-kontaktowa .box .text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .sekcja-kontaktowa .box .text h3 {
+    color: #00bcd4;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.formularz-kontaktowy {
+    border-radius: 15px;
+    min-width: 60vh;
+    padding: 40px;
+    background: #fff;
+}
+
+.formularz-kontaktowy h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formularz-kontaktowy .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.formularz-kontaktowy .inputBox input,
+.formularz-kontaktowy .inputBox textarea {
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 17px;
+    margin: 10px 0;
+    border-bottom: 2px solid #333;
+}
+
+.formularz-kontaktowy .inputBox span {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    color: #666;
+    padding: 5px 0;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+.formularz-kontaktowy .inputBox input:focus~span,
+.formularz-kontaktowy .inputBox input:valid~span,
+.formularz-kontaktowy .inputBox textarea:focus~span,
+.formularz-kontaktowy .inputBox textarea:valid~span {
+    font-size: 14px;
+    color: goldenrod;
+    transform: translateY(-20px);
+}
+
+.formularz-kontaktowy .inputBox input:valid~span,
+.formularz-kontaktowy .inputBox textarea:valid~span {
+    color: lime;
+}
+
+.formularz-kontaktowy .inputBox input[type=submit] {
+    padding: 15px 0px;
+    width: 30%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.formularz-kontaktowy .inputBox input[type=submit]:hover {
+    background: firebrick;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .formularz-kontaktowy {
+        min-height: 55vh;
+        width: 40vw;
+    }
+
+    .formularz-kontaktowy .inputBox input[type=submit] {
+        width: 70px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .formularz-kontaktowy {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .formularz-kontaktowy {
+        height: 55vh;
+        min-width: 70vw;
+    }
+
+    .container .sekcja-kontaktowa {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .formularz-kontaktowy h2 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .formularz-kontaktowy h2 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .formularz-kontaktowy h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .formularz-kontaktowy h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .formularz-kontaktowy {
+        min-height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .container .sekcja-kontaktowa .box .email {
+        word-wrap: break-word;
+        word-break: break-all;
+        hyphens: auto;
+    }
+}
