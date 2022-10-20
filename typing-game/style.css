@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #39cccc;
+}
+
+.timer {
+  position: static;
+  color: lawngreen;
+  font-weight: 400;
+  font-size: 3rem;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.timer span span{
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 500;
+  background: #efefef;
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+.quote-display {
+  font-size: 2rem;
+  margin: auto;
+  font-weight: 400;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 500px;
+  padding: 1rem;
+}
+
+.correct {
+  color: limegreen;
+}
+.incorrect {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+.quote-input {
+  width: 500px;
+  min-height: 300px;
+  resize: none;
+  overflow-y: hidden;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: 1px solid #666;
+  outline: none;
+  padding: 1rem;
+}
