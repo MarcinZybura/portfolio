@@ -50,7 +50,12 @@ function activateDelteListener() {
 function deleteItem(i) {
     itemsArray.splice(i, 1);
     localStorage.setItem("items", JSON.stringify(itemsArray));
-    location.reload();
+    location.reload(); //uaktualnienie zadań po usunięciu
+}
+
+function activateEditListener() {
+    let editBtn = document.querySelectorAll(".editBtn")
+    editBtn.forEach()
 }
 
 function displayDate() {
@@ -63,3 +68,5 @@ window.onload = function () {
     displayDate();
     displayItems();
 }
+
+//splice operacje
