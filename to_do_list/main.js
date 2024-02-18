@@ -23,7 +23,7 @@ function displayItems() {
                         <div class="input-controller">
                             <textarea disabled>${itemsArray[i]}</textarea>
                             <div class="edit-controller">
-                                <i class="fa-solid fa-check deleteBtn"></i>
+                                <i class="fa-solid fa-trash deleteBtn"></i>
                                 <i class="fa-regular fa-pen-to-square editBtn"></i>
                             </div>
                         </div>
@@ -95,8 +95,14 @@ function updateItem(text, i) {
 
 function displayDate() {
     let date = new Date();
-    date = date.toString().split(" ");
-    document.querySelector("#date").innerHTML = date[1] + " " + date[2] + " " + date[3];
+    let months = [
+        "Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec",
+        "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"];
+    let day = date.getDate();
+    let month = months[date.getMonth()]
+    let year = date.getFullYear();
+
+    document.querySelector("#date").innerHTML = day + " " + month + " " + year; //wyświetlenie aktualnej daty
 }
 
 window.onload = function () {
