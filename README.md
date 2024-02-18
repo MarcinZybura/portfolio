@@ -9,7 +9,7 @@ link: https://panel-logowania.netlify.app/
 
 link: https://kalkulator-iphone.netlify.app/
 
-3. Projekt miał na celu poszerzenie mojej wiedzy na temat języka JavaScript, skupiając się głównie na przechowywaniu danych użytkownika w pamięci przeglądarki. Chodziło o to, aby dane wprowadzone przez użytkownika nie zostały utracone po odświeżeniu strony. W projekcie wykorzystałem metodę JSON.stringify(), która okazała się niezwykle przydatna przy manipulowaniu danymi w formie JSON.
+3. Projekt ten miał na celu poszerzenie mojej wiedzy na temat języka JavaScript, skupiając się głównie na przechowywaniu danych użytkownika w pamięci przeglądarki. Chodziło o to, aby dane wprowadzone przez użytkownika nie zostały utracone po odświeżeniu strony. W projekcie wykorzystałem metodę JSON.stringify(), która okazała się niezwykle przydatna przy manipulowaniu danymi w formie JSON.
 
 link: https://zaplanuj-cos.netlify.app/
 
