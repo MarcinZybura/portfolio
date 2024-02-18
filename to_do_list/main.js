@@ -23,13 +23,13 @@ function displayItems() {
                         <div class="input-controller">
                             <textarea disabled>${itemsArray[i]}</textarea>
                             <div class="edit-controller">
-                                <i class="fa-solid fa-trash deleteBtn"></i>
                                 <i class="fa-regular fa-pen-to-square editBtn"></i>
+                                <i class="fa-solid fa-trash deleteBtn"></i>
                             </div>
                         </div>
                         <div class="update-controller">
-                            <button class="saveBtn">Save</button>
-                            <button class="cancelBtn">Cancel</button>
+                            <button class="saveBtn">Zapisz</button>
+                            <button class="cancelBtn">Anuluj</button>
                         </div>
                 </div>`
     }
@@ -60,6 +60,11 @@ function activateEditListener() {
     editBtn.forEach((eb, i) => {
         eb.addEventListener("click", () => {
             updateController[i].style.display = "block";
+
+            inputs[i].style.color = "#f5f5f5";
+            inputs[i].style.backgroundColor = "gray";
+
+
             inputs[i].disabled = false;
         })
     })

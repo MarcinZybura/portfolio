@@ -45,10 +45,18 @@ body {
 .to-do-input button {
     font-family: "Montseratt", cursive;
     outline: none;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
     background-color: #efefef;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.to-do-input button:hover {
+    scale: 1.1;
+    background-color: white;
 }
 
 .input-header {
@@ -56,13 +64,81 @@ body {
 }
 
 .item textarea{
+    font-family: "Montseratt", cursive;
     width: 500px;
-    padding: 25px;
+    border-radius: 5px;
+    padding-left: 8px;
     resize: none;
 }
 
+.input-controller .fa-solid {
+    border-radius: 3px;
+    background-color: #D3D3D3;
+    color: darkslategrey;
+    padding: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.input-controller .fa-solid:hover {
+    color: #f5f5f5;
+    background-color:darkslategrey;
+}
+
+.input-controller .fa-regular {
+    border-radius: 3px;
+    background-color: #D3D3D3;
+    color: darkslategrey;
+    padding: 3px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.input-controller .fa-regular:hover {
+    color: #f5f5f5;
+    background-color: darkslategrey;
+}
+
+ .input-controller textarea {
+    font-family: "Montseratt", cursive;
+    text-align: left;
+    height: 30px;
+    color: white;
+}
+
+.saveBtn {
+    font-family: "Montseratt", cursive;
+    background-color: #E5E4E2;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 4px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.saveBtn:hover {
+    background: #f5f5f5;
+    color: #555;   
+}
 
 
+.cancelBtn:hover {
+    background: #f5f5f5;
+    color: #555;   
+}
+
+.cancelBtn {
+    font-family: "Montseratt", cursive;
+    background-color: #E5E4E2;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 4px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
 
 .update-controller {
     display: none;
