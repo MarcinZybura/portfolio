@@ -1,3 +1,31 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montseratt", cursive;;
+    min-height: 100vh;
+}
+
+.app {
+    border: 2px dotted green;
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+}
+
+#date {
+
+}
+
+
+
+
 .update-controller {
     display: none;
 }
